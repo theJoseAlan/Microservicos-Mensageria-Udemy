@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: msclientes
+
+#Quando coloca a porta como 0, ele irá setar uma porta randômica, para evitar algum estouro por muitas requests
+server:
+  port: 0
+
+#Indicando onde está o servidor eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+# ${spring.application.name}:${spring.application.instance_id:${random.value}
+  #gera um nome de instância randômica, pegando como referência o nome da aplicação (spring.application.name)
+  #Depois ele gera m valor randômico
+  #No terminal, aqui na IDE, posso subir novamente o MsClient, assim ele irá setar 2 lá (ou mais, se quiser)
+  #ou seja, posso subir a mesma aplicação (client) várias vezes para relacioná-la ao servidor
