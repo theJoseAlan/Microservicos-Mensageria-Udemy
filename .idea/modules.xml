@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Microservicos-Mensageria-Udemy.iml" filepath="$PROJECT_DIR$/.idea/Microservicos-Mensageria-Udemy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Eurekaserver/eurekaserver.iml" filepath="$PROJECT_DIR$/Eurekaserver/eurekaserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Msclientes/msclientes.iml" filepath="$PROJECT_DIR$/Msclientes/msclientes.iml" />
     </modules>
   </component>
 </project>
