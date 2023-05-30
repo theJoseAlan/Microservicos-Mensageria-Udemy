@@ -1,0 +1,23 @@
+#Abilitando no cloudgateway o localizador de microsserviços, que vai encontrar por lowecase (caixa baixa) na url
+spring:
+  application:
+    name: mscloudgateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+
+#Definir a porta. O eureka e o gatreway tem portas fixas, diferente de cliente, já que é o único que precisa
+#subir várias instãncias
+server:
+  port: 8080
+
+#Configuração do eureka client
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
