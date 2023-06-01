@@ -27,4 +27,10 @@ public class Cartao {
 
     private BigDecimal limiteBasico;
 
+    public Cartao(String nome, BandeiraCartao bandeira, BigDecimal renda, BigDecimal limiteBasico) {
+        this.nome = nome;
+        this.bandeira = bandeira;
+        this.renda = renda;
+        this.limiteBasico = limiteBasico;
+    }
 }
