@@ -25,6 +25,8 @@ public class AvaliadorCreditoController {
 
         SituacaoCliente situacaoCliente = avaliadorCreditoService.obterSituacaoCliente(cpf);
 
+        return ResponseEntity.ok(situacaoCliente);
+
     }
 
 
